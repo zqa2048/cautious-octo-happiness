@@ -33,7 +33,7 @@ console.log(result);
 result = search3(17, '大波浪');
 console.log(result);
 console.log('-------------');
-function search3() {
+function search4() {
     var xuqiu = [];
     for (var _i = 0; _i < arguments.length; _i++) {
         xuqiu[_i] = arguments[_i];
@@ -47,5 +47,5 @@ function search3() {
     }
     return yy + '的小姐姐';
 }
-result = search3('16岁', '瓜子脸', '大波浪', '水蛇腰', '大长腿');
+result = search4('16岁', '瓜子脸', '大波浪', '水蛇腰', '大长腿');
 console.log(result);

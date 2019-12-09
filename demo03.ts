@@ -20,7 +20,7 @@ result = search2(num,'大长腿')
 console.log(result)
 console.log('------------')
 
-function search3(age: number=18, stature?: string='水蛇腰'): string {
+function search3(age: number=18, stature?:string='水蛇腰'): string {
     let yy: string
     yy = '找到了' + age + '岁'
     if (stature != undefined) {
@@ -37,7 +37,7 @@ console.log(result)
 console.log('-------------')
 
 
-function search3(...xuqiu:string[]): string {
+function search4(...xuqiu:string[]): string {
     let yy: string='找到了'
     for (let i=0;i< xuqiu.length;i++){
         yy = yy + xuqiu[i]
@@ -47,5 +47,5 @@ function search3(...xuqiu:string[]): string {
     }
     return yy + '的小姐姐'
 }
-result = search3('16岁','瓜子脸','大波浪','水蛇腰','大长腿')
+result = search4('16岁','瓜子脸','大波浪','水蛇腰','大长腿')
 console.log(result)
