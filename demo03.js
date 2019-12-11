@@ -33,12 +33,12 @@ console.log(result);
 result = search3(17, '大波浪');
 console.log(result);
 console.log('-------------');
-function search4() {
+function search4(age) {
     var xuqiu = [];
-    for (var _i = 0; _i < arguments.length; _i++) {
-        xuqiu[_i] = arguments[_i];
+    for (var _i = 1; _i < arguments.length; _i++) {
+        xuqiu[_i - 1] = arguments[_i];
     }
-    var yy = '找到了';
+    var yy = '找到了' + age + '岁';
     for (var i = 0; i < xuqiu.length; i++) {
         yy = yy + xuqiu[i];
         if (i < xuqiu.length - 1) {
@@ -47,5 +47,6 @@ function search4() {
     }
     return yy + '的小姐姐';
 }
-result = search4('16岁', '瓜子脸', '大波浪', '水蛇腰', '大长腿');
+result = search4(10, '瓜子脸', '大波浪', '水蛇腰', '大长腿');
 console.log(result);
+console.log('-------------');
