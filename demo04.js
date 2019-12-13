@@ -16,11 +16,11 @@
 // let arr2:Array<string> = ['aa','bb','cc']
 // let arr3:Array<boolean> = [true,false,true]
 //---------------------------------------
-var arr1 = new Array(1, 2, 3); //构造函数赋值法
-var arr2 = new Array('aa', 'bb', 'cc');
-var arr3 = new Array(true, false, true);
+let arr1 = new Array(1, 2, 3); //构造函数赋值法
+let arr2 = new Array('aa', 'bb', 'cc');
+let arr3 = new Array(true, false, true);
 //元祖类型
-var arr4;
+let arr4;
 arr4 = new Array('周乾', 18);
 console.log(arr1[1]);
 console.log('--------------------------');
